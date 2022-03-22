@@ -73,13 +73,86 @@
   max-width: 800px;
 }
 
+.answer {
+  font-size: 1.3rem;
+}
+
+.cardFill {
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid #5200FF; */
+  background-color: #C5D98F;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.cardFillGreen {
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid #5200FF; */
+  background-color: #C5D98F;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.cardFillRed {
+  margin: 1rem;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid #5200FF; */
+  background-color: #C5D98F;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.cardFill:hover,
+.cardFill:focus,
+.cardFill:active {
+  /* color: #5200FF; */
+  color: #C5D98F;
+  background-color: transparent;
+  border: 1px solid #C5D98F;
+  border-color: #C5D98F;
+}
+
+.cardFillGreen:hover,
+.cardFillGreen:focus,
+.cardFillGreen:active {
+  /* color: #22D775; */
+  background: #22D775;
+  border-color: #22D775;
+}
+
+.cardFillRed:hover,
+.cardFillRed:focus,
+.cardFillRed:active {
+  /* color: #D74222; */
+  background: #D74222;
+  border-color: #D74222;
+}
+
+.cardFill:nth-child(0):hover {
+  background-color: #22D775;
+}
+
 .card {
   margin: 1rem;
   padding: 10px;
   text-align: center;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #8aaa57;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
@@ -102,6 +175,10 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
+/* span {
+  color: #22D775;
+} */
 
 .logo {
   height: 1em;

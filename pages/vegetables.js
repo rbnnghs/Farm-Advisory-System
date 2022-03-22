@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import React from 'react'
-import Link from 'next/link'
+// import React from 'react'
+import Link from 'next/dist/client/link';
+
 
 // class App extends React.Component {
 
@@ -14,7 +15,7 @@ import Link from 'next/link'
 //   this.myRef.current.value = "Welcome " + name
 // }
 
-export default function Home() {
+export default function Vegetables() {
   return (
     <div className={styles.container}>
       <Head>
@@ -31,7 +32,7 @@ export default function Home() {
 <button onclick={changeTemp('Bye')}>Click for Bye</button> */}
 
         <h1 className={styles.title}>
-          Farm Advisory System
+          Vegetables
         </h1>
 
         {/* <p className={styles.description}>
@@ -40,24 +41,11 @@ export default function Home() {
         </p> */}
 
         <div className={styles.grid}>
+          <Link href="/melon">
           <div
             className={styles.card}
           >
-            <h2>🌾 Grains </h2>
-          </div>
-          <div
-            className={styles.card}
-          >
-            <h2>🧪 Tubers </h2>
-            {/* <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p> */}
-          </div>
-          <Link href="/vegetables">
-          <div
-            className={styles.card}
-          >
-            <h2>🥕 Vegetables </h2>
+            <h2>Melon (Egusi) </h2>
             {/* <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p> */}
@@ -66,7 +54,23 @@ export default function Home() {
           <div
             className={styles.card}
           >
-            <h2>🦓 Animals</h2>
+            <h2>Lettuce </h2>
+            {/* <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p> */}
+          </div>
+          <div
+            className={styles.card}
+          >
+            <h2>Spinach </h2>
+            {/* <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p> */}
+          </div>
+          <div
+            className={styles.card}
+          >
+            <h2>Strawberry</h2>
             {/* <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p> */}

@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import React from 'react'
-import Link from 'next/link'
+// import React from 'react'
+// import Link from 'next/dist/client/link';
+
 
 // class App extends React.Component {
 
@@ -14,7 +15,7 @@ import Link from 'next/link'
 //   this.myRef.current.value = "Welcome " + name
 // }
 
-export default function Home() {
+export default function Animals() {
   return (
     <div className={styles.container}>
       <Head>
@@ -44,6 +45,9 @@ export default function Home() {
             className={styles.card}
           >
             <h2>🌾 Grains </h2>
+            {/* <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p> */}
           </div>
           <div
             className={styles.card}
@@ -53,7 +57,6 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p> */}
           </div>
-          <Link href="/vegetables">
           <div
             className={styles.card}
           >
@@ -62,7 +65,6 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p> */}
           </div>
-          </Link>
           <div
             className={styles.card}
           >
