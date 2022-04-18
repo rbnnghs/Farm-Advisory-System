@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model LevelItem {
+  id            Int     @id @default(autoincrement())
+  parentId      Int?
+  choiceText    String?
+  answerText    String?
+  nextLevelQues Int?
+}
+
+model Version {
+  versionNum Int?
+  id         Int  @id @default(autoincrement())
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by the Prisma Client.
+model android_metadata {
+  locale String? @default("en_US")
+
+  @@ignore
+}

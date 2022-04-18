@@ -162,6 +162,7 @@
 .card:focus,
 .card:active {
   color: #5200FF;
+  background-color: #d5dfbb;
   border-color: #5200FF;
 }
 
