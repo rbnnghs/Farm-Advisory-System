@@ -3,6 +3,8 @@ import '../styles/globals.css'
 import React from 'react'
 import useSWR from 'swr'
 
+import Navbar from '../components/Navbar'
+
 import DataContext from '../DataContext'
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -12,8 +14,8 @@ function MyApp({Component, pageProps}) {
 
   return (
     <>
-    <header>FAS</header>
-    <DataContext.Provider value={data}>
+  <Navbar/>
+  <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>
     </>

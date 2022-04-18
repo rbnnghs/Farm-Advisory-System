@@ -16,12 +16,33 @@ const withChildren = array => {
   if(!levelInfo.children) levelInfo.children = []
 
   const normalised = levelInfo.choiceText.replace(/\(.+\)/g, '').trim().toLowerCase()
-  const singleWord = normalised.split(' ').length === 1
+  const singleWord = normalised.split(' ').length === 1 || 2
   const emoji = singleWord && (Object.entries({
-      "🍉": ["melon", "watermelon", "juicemelon"]
+      "🍈": ["melon", "watermelon", "juicemelon"],
+      "🌾": ["wheat", "grains"],
+      "🧪": ["tube", "tubers"],
+      "🥕": ["vegetable", "veg", "vegetables"],
+      "🍠": ["cassava", "yam"],
+      "🥔": ["potato", "irish ", "Sweet Potato"],
+      "🦒": ["animal", "animals"],
+      "🍗": ["poultry"],
+      "🐏": ["sheep"],
+      "🐐": ["goat", "goats"],
+      "🐂": ["cattle", "cow", "cows"],
+      "🐖": ["pig", "pigs", "pork"],
+      "🐕": ["dog", "dogs", "wild"],
+      "🐇": ["rabbit", "rabbits", "hare"],
+      "🛖": ["house", "housing"],
+      "🐾": ["breed", "breeding"],
+      "👩‍🍼🚰": ["feed", "water"],
+      "💉": ["vaccination", "vaccinations"],
+      "🦠": ["disease", "diseases"],
+      "📈": ["marketing", "market"],
+      "🍚": ["rice"],
+      "🌽": ["maize", "corn"]
   }).find(([_, arrayOfKeys]) => arrayOfKeys.includes(normalised)) ?? [])[0]
 
-  if(emoji) levelInfo.choiceText = emoji + levelInfo.choiceText
+  if(emoji) levelInfo.choiceText = emoji + ' ' + levelInfo.choiceText
   
   const parent = array.find(({id: parentsId}) => parentsId === parentId)
   

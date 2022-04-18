@@ -1,5 +1,7 @@
 import useLevelInfo from "../useLevelInfo"
 import LevelInfoLink from "./LevelInfoLink"
+import styles from "../styles/Home.module.css"
+
 
 const LevelInfo = ({id, level=0}) => {
     const levelInfo = useLevelInfo(id)
@@ -14,14 +16,33 @@ const LevelInfo = ({id, level=0}) => {
     const needsAnswers = isQuestion && !children.length
 
     // if(isQuestion) comment = hasAnswers ? 'This has answers' : 'This needs answers'
-    let comment = ''
-    // if(!isQuestion) comment = children.length ? 'This is a category' : 'This needs questions'
+    // let comment = ''
+    // let com =''
+    // if(!!isQuestion) comment = children.length ? '' :
+    // <div className={styles.qWrapper}>
+    // <h1>Question</h1>
+    // </div> 
+
+    // const showQuestion = () => {
+        let comment = ''
+
+        if(!!isQuestion) comment = children.length ? '' :
+        <div className={styles.qWrapper}>
+        <h1>Answer</h1>
+        </div> 
+
+    // if(!hasAnswers) com = children.length ? '' : 
+    // <div className={styles.aWrapper}>
+    // <h1>Answers</h1>
+    // </div>
+    // 'This is a category' : 'This needs questions'
     
 
-    return <div key={id} className={`level-${level}`}>
-        <h1>{levelInfo.choiceText}</h1>
+    return <div className={styles.main}><div key={id} className={`level-${level}`}>
+        <h1 className={styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
-        {isQuestion ? levelInfo.answerText : children}
+        <div className={styles.lvlAnswer}>{isQuestion ? levelInfo.answerText : children}</div>
+    </div>
     </div>
 }
 
