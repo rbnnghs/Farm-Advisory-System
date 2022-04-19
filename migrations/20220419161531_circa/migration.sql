@@ -17,7 +17,7 @@ CREATE TABLE "Version" (
     CONSTRAINT "Version_pkey" PRIMARY KEY ("id")
 );
 
-INSERT INTO LevelItem (id, parentId, choiceText, answerText, nextLevelQues)
+INSERT INTO "LevelItem" ("id", "parentId", "choiceText", "answerText", "nextLevelQues")
 VALUES  (1, 0, 'Farmer Advice System', '', 0),
         (2, 1, 'Grains', '', 0),
         (3, 2, 'Maize', '', 0),
