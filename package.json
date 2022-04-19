@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
+    "postinstall": "prisma",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build":"prisma generate && prisma migrate deploy && next build",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
     "prisma:generate": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^3.12.0",
     "dotenv-cli": "^5.1.0",
     "next": "12.1.0",
+    "prisma": "^3.12.0",
     "react": "17.0.2",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",

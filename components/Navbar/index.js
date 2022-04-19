@@ -6,14 +6,14 @@ import styles from '../Navbar/styles.module.css'
 // import { render } from 'react-dom';
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollnav, setscrollnav] = useState(false);
   const [doEdit, setdoEdit] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
+      setscrollnav(true);
     } else {
-      setScrollNav(false);
+      setscrollnav(false);
     }
   };
 
@@ -35,7 +35,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-        <div className={styles.nav} scrollNav={scrollNav}>
+        <div className={styles.nav} scrollnav={scrollnav}>
           <div className={styles.navbarContainer}>
             <div className={styles.navLogo} onClick={toggleHome} to='/'>
             <Link href='/'>
@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
                   to='/projects'
                   smooth={true}
                   duration={500}
-                  spy={true}
+                  
                   exact='true'
                   offset={-80}
                   >
@@ -67,7 +67,7 @@ const Navbar = ({ toggle }) => {
                   to='/post'
                   smooth={true}
                   duration={500}
-                  spy={true}
+                  
                   exact='true'
                   offset={-80}
                   >
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
                 //   to='/resume'
                   smooth={true}
                   duration={500}
-                  spy={true}
+                  
                   exact='true'
                   offset={-80}
                   >
