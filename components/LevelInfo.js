@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css"
 const LevelInfo = ({id, level=0}) => {
     const levelInfo = useLevelInfo(id)
 
-    if(!levelInfo) return <span>Loading...</span>
+    if(!levelInfo) return <span className={styles.loadText}>Loading...</span>
 
     const children = levelInfo.children.map(id => <p><LevelInfoLink id={id}/></p>)
 

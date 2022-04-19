@@ -4,6 +4,7 @@ import React from 'react'
 import useSWR from 'swr'
 
 import Navbar from '../components/Navbar'
+// import Searchbar from '../components/Searchbar'
 
 import DataContext from '../DataContext'
 
@@ -15,6 +16,7 @@ function MyApp({Component, pageProps}) {
   return (
     <>
   <Navbar/>
+  {/* <Searchbar/> */}
   <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>
