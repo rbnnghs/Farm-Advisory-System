@@ -10,7 +10,7 @@ const LevelInfoLink = ({id}) => {
         <>
     <div className={styles.wrapperCard}>
     <Link href={`/${id}`}>
-    <div className={styles.card}>
+    <div onclick="" className={styles.card}>
     {choiceText}
     </div>
     </Link>
