@@ -42,61 +42,8 @@ const Navbar = ({ toggle }) => {
             FAS
             </Link>
               </div>
-
-              
-              <div></div>
-              <ul className={styles.guide}>
-              <li className={styles.outerGuide}>
-              <div className={styles.innerGuide}
-                  to='/projects'
-                  smooth={true}
-                  duration={500}
-                  
-                  exact='true'
-                  offset={-80}
-                  >
-                  {/* <Link href="/projects"> */}
-                  <a href="" className={styles.linked} aria-label="selected projects">
-        <Folder className={styles.icon} />
-      </a>
-      {/* </Link> */}
-                </div>
-                </li>
-              <li className={styles.outerGuide}>
-              <div className={styles.innerGuide}
-                  to='/post'
-                  smooth={true}
-                  duration={500}
-                  
-                  exact='true'
-                  offset={-80}
-                  >
-                  {/* <Link href="/post"> */}
-                  <a href="" className={styles.linked} aria-label="posts">
-        <Edit className={styles.icon} />
-      </a>
-      {/* </Link> */}
-      </div>
-      </li>
-              <li className={styles.outerGuide}>
-              <div className={styles.innerGuide}
-                //   to='/resume'
-                  smooth={true}
-                  duration={500}
-                  
-                  exact='true'
-                  offset={-80}
-                  >
-                  {/* <Link href="/resume"> */}
-                  <a href="" className={styles.linked} aria-label="c-v">
-        <Paperclip className={styles.icon} />
-      </a>
-      {/* </Link> */}
-                </div>
-                </li>
-                </ul>
-                </div>
-                </div>
+              </div>
+              </div>
     </>
   );
 };
