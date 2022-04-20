@@ -1,7 +1,7 @@
 html,
 body {
   background-color: #F6F3E5;
-  /* background-color: rgb(39, 39, 39); */
+  word-break: break-all;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
