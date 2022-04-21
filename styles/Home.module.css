@@ -106,6 +106,7 @@
   text-decoration: none;
   display: block;
   max-width: 50%;
+  width: 30%;
   /* min-width: 40%;  */
   overflow: hidden;
   margin-left: auto;
@@ -142,7 +143,7 @@
 .qWrapper h1 {
   position: absolute;
   left: 50%;
-  background-color: #b4decc;
+  background-color: #c1e1d4;
   border-radius: 20px;
   padding: 15px;
   /* width: 100%; */
@@ -203,16 +204,57 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   /* width: 200px; */
+  width: 200px;
   /* min-width: 50%; */
 }
 
-@media  (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .card {
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 90%;
+    font-size: 1rem;
     /* width: 400px; */
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .parentIdH1 {
+    /* flex-direction: column; */
+    width: 90%;
+    font-size: 1rem;
+    /* width: 400px; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .lvlAnswer {
+    /* flex-direction: column; */
+    /* width: 90%; */
+    /* width: 500px; */
+    font-size: 1rem;
+    /* width: 400px; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qWrapper h1 {
+    /* flex-direction: column; */
+    /* width: 90%; */
+    /* width: 500px; */
+    font-size: 1rem;
+    width: 160px;
+    /* line-height: 30px; */
+    /* width: 400px; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .qWrapper {
+    height: 30px;
+  }
+}
+
+
 
 .card:hover {
   /* color: #9d8ac6; */
