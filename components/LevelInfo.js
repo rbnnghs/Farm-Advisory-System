@@ -29,16 +29,20 @@ const LevelInfo = ({id, level=0}) => {
         if(!!isQuestion) comment = children.length ? '' :
         <div className={styles.qWrapper}>
         <h1>Answer</h1>
-        <div className={styles.container}>
-                    <style jsx global>
+        <div className={styles.lvlAnswer}>
+                    <style>
               {`
-                  body {
-                    //   background: white;
+                  .lvlAnswer {
+                      background: white;
                    }
                `}
             </style>
         </div>
         </div> 
+        else if (!isQuestion) comment = children.length ? '' :
+        <div className={styles.naWrapper}>
+        <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>
+        </div>
 
     // if(!hasAnswers) com = children.length ? '' : 
     // <div className={styles.aWrapper}>
