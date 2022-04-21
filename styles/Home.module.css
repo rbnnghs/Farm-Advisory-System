@@ -191,16 +191,16 @@
   /* border: 2.5px solid white; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 500px; */
+  max-width: 200px;
 }
 
 .card:hover {
   /* color: #9d8ac6; */
   /* color: #000; */
   cursor: pointer;
-  background-color: #22D775;
+  background-color: #d0c69e;
   /* background-image: linear-gradient(315deg, #c4b881 10%, #ddd2a1 94%, #c4b881 50%); */
-  transform: scale(3rem);
+  /* transform: scale(3rem); */
   /* box-shadow: 0 0 3.5px rgb(251, 225, 225);  */
   /* border: -6px solid #5200FF; */
 }
