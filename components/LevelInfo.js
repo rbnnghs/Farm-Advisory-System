@@ -29,6 +29,15 @@ const LevelInfo = ({id, level=0}) => {
         if(!!isQuestion) comment = children.length ? '' :
         <div className={styles.qWrapper}>
         <h1>Answer</h1>
+        <div className={styles.container}>
+                    <style jsx global>
+              {`
+                  body {
+                      background: white;
+                   }
+               `}
+            </style>
+        </div>
         </div> 
 
     // if(!hasAnswers) com = children.length ? '' : 

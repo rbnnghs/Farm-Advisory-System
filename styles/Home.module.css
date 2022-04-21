@@ -151,7 +151,9 @@
 }
 
 .lvlAnswer {
-  padding: 20px;
+  /* background-color: #22D775; */
+  border-radius: 10px;
+  padding: 40px;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -163,7 +165,7 @@
   margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
-  color: inherit;
+  /* color: inherit; */
 }
 
 .wrapperCard {
@@ -191,7 +193,7 @@
   /* border: 2.5px solid white; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 200px; */
+  max-width: 40%;
 }
 
 .card:hover {
