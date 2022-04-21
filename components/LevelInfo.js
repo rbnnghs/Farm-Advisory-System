@@ -33,7 +33,7 @@ const LevelInfo = ({id, level=0}) => {
                     <style jsx global>
               {`
                   body {
-                      background: white;
+                    //   background: white;
                    }
                `}
             </style>

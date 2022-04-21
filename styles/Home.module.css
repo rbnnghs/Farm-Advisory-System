@@ -177,7 +177,8 @@
   text-align: center;
   color: black;
   text-decoration: none;
-  display: block;
+  /* display: inline-block; */
+  display: table;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -193,7 +194,16 @@
   /* border: 2.5px solid white; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 40%; */
+  /* width: 200px; */
+  /* min-width: 50%; */
+}
+
+@media  (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+    /* width: 400px; */
+  }
 }
 
 .card:hover {
