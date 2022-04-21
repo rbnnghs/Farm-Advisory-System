@@ -166,13 +166,18 @@
   background-color: #e1c1c1;
   border-radius: 20px;
   padding: 25px;
-  /* width: 560px; */
-  width: 40%;
+  max-width: 460px;
+  /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1.65rem;
   color: rgb(0, 0, 0);
+}
+
+.naWrapper h1:hover {
+  background-color: #cca8a8;
+  cursor: pointer;
 }
 
 .lvlAnswer {
@@ -287,6 +292,7 @@
 @media only screen and (max-width: 768px) {
   .naWrapper {
     height: 30px;
+    width: 20px;
   }
 }
 
