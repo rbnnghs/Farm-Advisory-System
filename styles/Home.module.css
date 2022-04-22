@@ -221,8 +221,8 @@
   background-color: var(--card-tone);
   /* margin: 1rem; */
   padding: 1.5rem;
-  color: #fff;
-  background-color: #40a861;
+  color: #000;
+  background-color: #ddd5b5;
   text-decoration: none;
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
@@ -233,7 +233,7 @@
 @media only screen and (max-width: 768px) {
   .card {
     /* flex-direction: column; */
-    width: 60%;
+    /* width: 60%; */
     font-size: 1rem;
     /* width: 400px; */
   }

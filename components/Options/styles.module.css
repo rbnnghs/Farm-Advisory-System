@@ -31,8 +31,8 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    display: flex;
-    overflow: hidden;
+    /* display: flex;
+    overflow: hidden; */
     /* padding: 0 304px; */
     /* margin-top: 170px; */
     font-family: 'Source Sans Pro', sans-serif;

@@ -41,7 +41,7 @@ const LevelInfo = ({id, level=0}) => {
             </style>
         </div>
         </div> 
-        <Options></Options>
+        {/* <Options></Options> */}
         </div>
         else if (!isQuestion) comment = children.length ? '' :
         <div className={styles.naWrapper}>
