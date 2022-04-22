@@ -1,6 +1,7 @@
 import useLevelInfo from "../useLevelInfo"
 import LevelInfoLink from "./LevelInfoLink"
 import styles from "../styles/Home.module.css"
+import Options from "./Options"
 
 
 const LevelInfo = ({id, level=0}) => {
@@ -27,6 +28,7 @@ const LevelInfo = ({id, level=0}) => {
         let comment = ''
 
         if(!!isQuestion) comment = children.length ? '' :
+        <div>
         <div className={styles.qWrapper}>
         <h1>Answer</h1>
         <div className={styles.lvlAnswer}>
@@ -39,9 +41,13 @@ const LevelInfo = ({id, level=0}) => {
             </style>
         </div>
         </div> 
+        <Options></Options>
+        </div>
         else if (!isQuestion) comment = children.length ? '' :
         <div className={styles.naWrapper}>
+            <a href='/failForm'>
         <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>
+        </a>
         </div>
 
     // if(!hasAnswers) com = children.length ? '' : 
@@ -55,6 +61,8 @@ const LevelInfo = ({id, level=0}) => {
         <h1 className={styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
         <div className={styles.lvlAnswer}>{isQuestion ? levelInfo.answerText : children}</div>
+        {/* {if(!!isQuestion) comment = children.length ? '' : */}
+        {/* <Options></Options>s */}
     </div>
     </div>
 }
