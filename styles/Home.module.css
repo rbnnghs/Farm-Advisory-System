@@ -227,7 +227,7 @@
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
   transition: color .15s ease,border-color .15s ease;
-  width: 45%;
+  /* width: 45%; */
 }
 
 @media only screen and (max-width: 768px) {
