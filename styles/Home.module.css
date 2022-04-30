@@ -14,7 +14,8 @@
 }
 
 .loadText {
-
+  float: right;
+  color: white;
 }
 
 .footer {
@@ -113,21 +114,11 @@
   margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
-  background-color: #c1e1c2;
-  /* background-color: #ae7b9e; */
-  /* border: 5px solid #000; */
-  color: inherit;
+  color: #F8ECD1;
+  background-color: #AC7D88;
+  /* color: inherit; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-
-  /* margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 1.5rem;
-  max-width: 80%;
-  min-width: 100%;
-  margin-top: 50px; */
-  /* background-color: #22D775; */
 }
 
 .qWrapper {
@@ -218,11 +209,11 @@
 .card {
   text-align: center;
   vertical-align: middle;
-  background-color: var(--card-tone);
-  /* margin: 1rem; */
   padding: 1.5rem;
-  color: #000;
-  /* background-color: #ddd5b5; */
+  /* color: #F8ECD1;
+  background-color: #AC7D88; */
+  background-color: #DEB6AB;
+  color: #85586F;
   text-decoration: none;
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
@@ -295,6 +286,27 @@
   }
 }
 
+.windowFrame {
+  position: relative;
+}
+
+.windowFrameLower {
+  /* background: #2c2c2c; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 50%; */
+  width: 70%;
+  /* width: 800px;
+  height: 800px; */
+}
+
+@media screen and (max-width: 768px) {
+  .windowFrameLower {
+    position: absolute;
+    width: 100%;
+  }
+}
 
 
 .card:hover {

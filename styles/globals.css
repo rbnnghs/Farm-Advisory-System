@@ -3,6 +3,7 @@ body {
   /* background-color: #F6F3E5; */
   /* word-break: break-all; */
   overflow-wrap: break-word;
+  /* color: antiquewhite; */
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -16,4 +17,5 @@ a {
 
 * {
   box-sizing: border-box;
+  background-color: #F8ECD1;
 }

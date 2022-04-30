@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import styles from '../styles/Home.module.css'
 
 import React from 'react'
 import useSWR from 'swr'
@@ -15,9 +16,13 @@ function MyApp({Component, pageProps}) {
   return (
     <>
   <Navbar/>
+  <div className={styles.windowFrame}>
+    <div className={styles.windowFrameLower}>
   <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>
+    </div>
+    </div>
     </>
     
   )
