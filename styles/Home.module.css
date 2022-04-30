@@ -222,7 +222,7 @@
   /* margin: 1rem; */
   padding: 1.5rem;
   color: #000;
-  background-color: #ddd5b5;
+  /* background-color: #ddd5b5; */
   text-decoration: none;
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
@@ -301,11 +301,11 @@
   /* color: #9d8ac6; */
   /* color: #000; */
   cursor: pointer;
-  background-color: #d0c69e;
+  /* background-color: #d0c69e; */
   /* background-image: linear-gradient(315deg, #c4b881 10%, #ddd2a1 94%, #c4b881 50%); */
   /* transform: scale(3rem); */
   /* box-shadow: 0 0 3.5px rgb(251, 225, 225);  */
-  /* border: -6px solid #5200FF; */
+  border: 1px solid #5200FF;
 }
 
 /* .card h2 {
