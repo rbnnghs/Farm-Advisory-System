@@ -1,10 +1,12 @@
 .container {
   padding: 0 2rem;
+  /* height: 100%; */
 }
 
 .main {
   min-height: 100vh;
   margin-top: 100px;
+  /* height: 100%; */
   /* padding: 4rem 0; */
   flex: 1;
   /* display: flex; */
@@ -286,23 +288,28 @@
   }
 }
 
-.windowFrame {
-  position: relative;
+.windowFull {
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
-.windowFrameLower {
-  /* background: #2c2c2c; */
+.windowFrame {
+  position: relative;
+  /* height: 100%; */
+}
+
+.windowFrameLeft {
   position: absolute;
   top: 0;
   left: 0;
-  /* height: 50%; */
-  width: 70%;
-  /* width: 800px;
-  height: 800px; */
+  width: 50%;
+  /* height: 100%; */
 }
 
 @media screen and (max-width: 768px) {
-  .windowFrameLower {
+  .windowFrameLeft {
     position: absolute;
     width: 100%;
   }

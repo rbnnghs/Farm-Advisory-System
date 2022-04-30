@@ -8,6 +8,8 @@ import Navbar from '../components/Navbar'
 
 import DataContext from '../DataContext'
 
+import HeroSection from '../components/HeroSection'
+
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 function MyApp({Component, pageProps}) {
@@ -15,12 +17,15 @@ function MyApp({Component, pageProps}) {
 
   return (
     <>
+    <div className={styles.windowFull}>
   <Navbar/>
   <div className={styles.windowFrame}>
-    <div className={styles.windowFrameLower}>
+    <HeroSection/>
+    <div className={styles.windowFrameLeft}>
   <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>
+    </div>
     </div>
     </div>
     </>

@@ -1,0 +1,29 @@
+.windowFrame {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* z-index: 999; */
+    /* background-color: aliceblue; */
+  }
+  
+  .windowFrameRight {
+    position: absolute;
+    background-color: #fff6ea;
+    height: 1200px;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .windowFrameRightInside {
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .windowFrame {
+        height: 0px;
+        width: 0px;
+    }
+  }

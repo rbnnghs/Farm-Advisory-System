@@ -8,8 +8,8 @@
     /* top: 0;
     left: 0; */
     z-index: 999;
-    width: 100%;
-    margin-top: 30px;
+    /* width: 100%; */
+    /* margin-top: 30px; */
     justify-content: center;
     font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
@@ -22,10 +22,12 @@
     @media screen and (max-width: 960px) {
       .nav {
       transition: 0.9s all ease;
+      width: 100%;
     }
   }
 
   .navbarContainer {
+    margin-top: 30px;
     display: flex;
     /* justify-content: space-between; */
     z-index: 1;
