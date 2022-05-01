@@ -17,8 +17,8 @@ function MyApp({Component, pageProps}) {
 
   return (
     <> 
-    <div className={styles.windowFull}>
     <Navbar/>
+    <div className={styles.windowFull}>
   {/* <div className={styles.windowFrame}> */}
     {/* <HeroSection/>
     <div className={styles.windowFrameLeft}> */}
