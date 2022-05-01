@@ -15,14 +15,13 @@
     align-items: center;
     display: flex;
     /* color: coral; */
-    /* background-color: var(--evening-blues); */
     /* height: 10px; */
   }
   
     @media screen and (max-width: 960px) {
       .nav {
       transition: 0.9s all ease;
-      width: 100%;
+      /* width: 100%; */
     }
   }
 
@@ -37,7 +36,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background-color: var(--evening-blues); */
+    /* background-color: black; */
   
   }
   
