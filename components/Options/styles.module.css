@@ -5,7 +5,7 @@
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-  z-index: 999;
+  /* z-index: 999; */
   overflow: hidden;
   display: flex;
   /* margin-left: auto; */
