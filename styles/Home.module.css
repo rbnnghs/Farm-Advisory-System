@@ -17,7 +17,7 @@
 
 .loadText {
   float: right;
-  color: white;
+  color: rgb(189, 131, 171);
 }
 
 .footer {
@@ -211,7 +211,7 @@
 .card {
   text-align: center;
   vertical-align: middle;
-  padding: 1.5rem;
+  padding: 2rem;
   /* color: #F8ECD1;
   background-color: #AC7D88; */
   background-color: #DEB6AB;
@@ -220,7 +220,7 @@
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
   transition: color .15s ease,border-color .15s ease;
-  /* width: 45%; */
+  width: 300px;
 }
 
 @media only screen and (max-width: 768px) {
