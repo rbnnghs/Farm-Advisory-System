@@ -17,7 +17,7 @@ function MyApp({Component, pageProps}) {
 
   return (
     <> 
-    <div className={styles.windowFull}>
+    {/* <div className={styles.windowFull}> */}
     <Navbar/>
   {/* <div className={styles.windowFrame}> */}
     {/* <HeroSection/>
@@ -25,7 +25,7 @@ function MyApp({Component, pageProps}) {
   <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>
-     </div> 
+     {/* </div>  */}
     </>
     
   )
