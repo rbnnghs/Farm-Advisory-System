@@ -36,14 +36,14 @@ const Navbar = ({ toggle }) => {
   return (
     <>
         <div className={styles.nav} scrollnav={scrollnav}>
-          {/* <div className={styles.navbarContainer}> */}
+          <div className={styles.navbarContainer}>
             <div className={styles.navLogo} onClick={toggleHome} to='/'>
             <Link href='/'>
             FAS
             </Link>
               </div>
               </div>
-              {/* </div> */}
+              </div>
     </>
   );
 };
