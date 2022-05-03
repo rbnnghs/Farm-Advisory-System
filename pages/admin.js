@@ -1,7 +1,7 @@
-const Admin = () => {
+// const Admin = () => {
 
     //authentication
 
-}
+// }
 
 // export default Admin;
