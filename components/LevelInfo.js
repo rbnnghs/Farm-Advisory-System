@@ -27,23 +27,23 @@ const LevelInfo = ({id, level=0}) => {
     // const showQuestion = () => {
         let comment = ''
 
-        if(!!isQuestion) comment = children.length ? '' :
-        <div>
-        <div className={styles.qWrapper}>
-        <h1>Answer</h1>
-        <div className={styles.lvlAnswer}>
-                    <style>
-              {`
-                  .lvlAnswer {
-                      background: white;
-                   }
-               `}
-            </style>
-        </div>
-        </div> 
+        // if(!!isQuestion) comment = children.length ? '' :
+        // <div>
+        // <div className={styles.qWrapper}>
+        // <h1>Answer</h1>
+        // <div className={styles.lvlAnswer}>
+        //             <style>
+        //       {`
+        //           .lvlAnswer {
+        //               background: white;
+        //            }
+        //        `}
+        //     </style>
+        // </div>
+        // </div> 
         {/* <Options></Options> */}
-        </div>
-        else if (!isQuestion) comment = children.length ? '' :
+        // </div>
+        if (!isQuestion) comment = children.length ? '' :
         <div className={styles.naWrapper}>
             <a href='/failForm'>
         <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>

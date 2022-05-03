@@ -80,8 +80,8 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
-
-/* .answer {
+/* 
+.answer {
   font-size: 1.3rem;
 } */
 
@@ -128,21 +128,22 @@
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: auto;
-  height: 50px;
+  /* height: 50px; */
+  /* background-color: #36e18b; */
 }
 
 .qWrapper h1 {
   position: absolute;
   left: 50%;
-  background-color: #c1e1d4;
+  /* background-color: #36e18b; */
   border-radius: 20px;
   padding: 15px;
-  width: 260px;
+  /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1.65rem;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .naWrapper {
@@ -156,16 +157,18 @@
 .naWrapper h1 {
   position: absolute;
   left: 50%;
-  background-color: #f0b4b4;
+  background-color: #ff7777;
   border-radius: 20px;
-  padding: 25px;
+  padding: 55px;
   max-width: 460px;
+  font-weight: 500;
   /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1.65rem;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
+  /* color: rgb(0, 0, 0); */
 }
 
 .naWrapper h1:hover {
@@ -178,7 +181,7 @@
   border-radius: 10px;
   padding: 40px;
   text-align: center;
-  color: black;
+  color: #85586F;
   font-weight: 500;
   /* background-color: #5200FF; */
   text-decoration: none;
@@ -208,12 +211,38 @@
   /* max-width: 800px; */
 }
 
+.questionCard {
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem;
+  background-color: #DEB6AB;
+  color: #85586F;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: color .15s ease,border-color .15s ease;
+  transition: color .15s ease,border-color .15s ease;
+  width: 300px;
+}
+
+.questionCard:hover {
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem;
+  background-color: #abdebb;
+  color: #85586F;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: color .15s ease,border-color .15s ease;
+  transition: color .15s ease,border-color .15s ease;
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #5200FF;
+}
+
 .card {
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
-  /* color: #F8ECD1;
-  background-color: #AC7D88; */
   background-color: #DEB6AB;
   color: #85586F;
   text-decoration: none;
@@ -225,10 +254,7 @@
 
 @media only screen and (max-width: 768px) {
   .card {
-    /* flex-direction: column; */
-    /* width: 60%; */
     font-size: 1rem;
-    /* width: 400px; */
   }
 }
 
@@ -319,27 +345,16 @@
 
 
 .card:hover {
-  /* color: #9d8ac6; */
-  /* color: #000; */
   cursor: pointer;
-  /* background-color: #d0c69e; */
-  /* background-image: linear-gradient(315deg, #c4b881 10%, #ddd2a1 94%, #c4b881 50%); */
-  /* transform: scale(3rem); */
-  /* box-shadow: 0 0 3.5px rgb(251, 225, 225);  */
   border: 1px solid #5200FF;
 }
-
-/* .card h2 {
-  color: #5200FF;
-  font-size: 1.5rem;
-} */
-
+/* 
 .card p {
   color: #5200FF;
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.5;
-}
+} */
 
 /* span {
   color: #22D775;
