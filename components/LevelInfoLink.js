@@ -35,6 +35,7 @@ const LevelInfoLink = ({id}) => {
     <div className={styles.wrapperCard}>
     <Link href={`/${id}`}>
     <div
+    onClick=''
     className={doesContain ? styles.questionCard : styles.card}
     >
     {choiceText}
