@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
 import { animateScroll as scroll } from 'react-scroll';
 import styles from '../Options/styles.module.css'
 // import { render } from 'react-dom';
@@ -15,13 +14,6 @@ const Options = ({ toggle, props }) => {
       setscrollopt(false);
     }
   };
-
-  const pageBefore = () => {
-    let history = useHistory();
-    // return (
-      history.goBack();
-    // )
-  }
 
   useEffect(() => {
     window.addEventListener('scroll', changeopt);
