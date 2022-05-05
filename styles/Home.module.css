@@ -278,6 +278,7 @@
 }
 
 .questionCard {
+  display: inline;
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
@@ -287,7 +288,7 @@
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
   transition: color .15s ease,border-color .15s ease;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .questionCard:hover {
@@ -362,6 +363,8 @@
 @media only screen and (max-width: 768px) {
   .questionCard {
     font-size: 1rem;
+    display: inline;
+    display: inline-block;
   }
 }
 
