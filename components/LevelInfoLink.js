@@ -5,30 +5,11 @@ import { Button } from "react-scroll/modules";
 
 const LevelInfoLink = ({id}) => {
     const {choiceText="???"} = useLevelInfo(id)
-    const isStyle = true;
     const doesContain = choiceText.includes('?')
 
     function handleAnswer(e) {
-        e.target.styles.card.background = "#36e18b"
+        e.target.style.background = "#36e18b"
     }
-
-    const hoverAnswer = '#36e18b'
-
-    const hoverEvent = {
-        color: "black"
-    }
-
-    const hoverHandle = () => {
-    if (choiceText.includes("?")) {
-        <div className={styles.card}>
-
-        </div>
-    // onmouseover={handleAnswer}
-    console.log("answer")
-    }
-    }
-
-
 
     return (
         <>

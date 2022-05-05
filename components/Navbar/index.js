@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Link from 'next/dist/client/link';
-import { Paperclip, Folder, Edit } from 'react-feather'
+import { Paperclip } from 'react-feather'
 import styles from '../Navbar/styles.module.css'
-// import { render } from 'react-dom';
 
 const Navbar = ({ toggle }) => {
   const [scrollnav, setscrollnav] = useState(false);
   const [doEdit, setdoEdit] = useState(false);
+  const [opened, setOpened] = useState(false);
+
+  // const hand = setOpened ? true : false
+
+  const handleClose = () => setOpened(false);
+  const handleShow = () => setOpened(true);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -19,6 +24,7 @@ const Navbar = ({ toggle }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
+    import('bootstrap/dist/js/bootstrap');
   }, []);
 
   const toggleHome = () => {
@@ -41,7 +47,9 @@ const Navbar = ({ toggle }) => {
             <Link href='/'>
             FAS
             </Link>
-              </div>
+
+            {/* <Paperclip/> */}
+            </div>
               </div>
               </div>
     </>

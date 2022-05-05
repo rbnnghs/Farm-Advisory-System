@@ -27,6 +27,9 @@ const LevelInfo = ({id, level=0}) => {
     // const showQuestion = () => {
         let comment = ''
 
+        const doesContain = levelInfo.choiceText.includes('?')
+
+
         // if(!!isQuestion) comment = children.length ? '' :
         // <div>
         // <div className={styles.qWrapper}>
@@ -58,7 +61,7 @@ const LevelInfo = ({id, level=0}) => {
     
 
     return <div className={styles.main}><div key={id} className={`level-${level}`}>
-        <h1 className={styles.parentIdH1}>{levelInfo.choiceText}</h1>
+        <h1 className={doesContain ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
         <div className={styles.lvlAnswer}>{isQuestion ? levelInfo.answerText : children}</div>
         {/* {if(!!isQuestion) comment = children.length ? '' : */}

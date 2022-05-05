@@ -700,7 +700,4 @@ Remarks: unstable weather conditions are affecting crop production generally and
         (571, 570, 'What age is an adult rabbit ready for market?', 'Rabbits should be ready for the table at four months of age. For the last month increase the grain feed and decrease the green feed. This should give you a good price.
 ', 0);
 
--- CreateTable
-CREATE TABLE "android_metadata" (
-    "locale" TEXT DEFAULT E'en_US'
-);
+
