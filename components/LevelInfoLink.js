@@ -5,7 +5,9 @@ import { Button } from "react-scroll/modules";
 
 const LevelInfoLink = ({id}) => {
     const {choiceText="???"} = useLevelInfo(id)
-    const doesContain = choiceText.includes('?')
+    const doesContain = choiceText.includes('?' || '.' || '')
+
+    // choiceText.replace('.', '?')
 
     function handleAnswer(e) {
         e.target.style.background = "#36e18b"

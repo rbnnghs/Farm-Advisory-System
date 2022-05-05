@@ -16,13 +16,15 @@ const LevelInfo = ({id, level=0}) => {
     const needsAnswers = isQuestion && !children.length
 
     let comment = ''
+    const localPart = 'me'
 
     const doesContain = levelInfo.choiceText.includes('?')
 
     if (!isQuestion) comment = children.length ? '' :
     <div className={styles.naWrapper}>
-    <a href='/nullform'>
-    <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>
+    {/* <a href='/nullform'> */}
+    <a href="mailto:click.to.reveal@email.com" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
+    <h1>No questions or answers for this category. If you'd like to be the first to ask, press on this item to send an email.</h1>
     </a>
     </div>
 
