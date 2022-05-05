@@ -1,5 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
+
 
 import React from 'react'
 import useSWR from 'swr'
@@ -8,6 +10,7 @@ import Navbar from '../components/Navbar'
 import Tests from '../pages/tests'
  
 import DataContext from '../DataContext'
+import Modal from '../components/Modal'
 
 // import HeroSection from '../components/HeroSection'
 // import { useEffect } from 'react'
@@ -20,6 +23,7 @@ function MyApp({Component, pageProps}) {
   return (
     <> 
     <Navbar/>
+    <Modal/>
   <DataContext.Provider value={data}>
       <Component {...pageProps} />
     </DataContext.Provider>

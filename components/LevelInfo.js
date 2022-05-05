@@ -21,10 +21,12 @@ const LevelInfo = ({id, level=0}) => {
     const doesContain = levelInfo.choiceText.includes('?')
 
     if (!isQuestion) comment = children.length ? '' :
-    <div className={styles.naWrapper}>
-    {/* <a href='/nullform'> */}
+    <div 
+    onclick
+    className={styles.naWrapper}>
     <a href="mailto:click.to.reveal@email.com" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
-    <h1>No questions or answers for this category. If you'd like to be the first to ask, press on this item to send an email.</h1>
+    <h1>No questions or answers for this category. If you'd like to be the first to ask. 
+        Press on this item to send an email.</h1>
     </a>
     </div>
 
