@@ -12,6 +12,8 @@
   text-align: center;
   top: 170px;
   position: relative;
+  cursor: pointer;
+  border: 5px #2a322a;
   /* position: relative; */
   margin: 0 auto;
   /* align-items: center; */
@@ -19,10 +21,15 @@
 
 .buttonBasic button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
+  cursor: pointer;
+
 }
 
 .buttonBasic :nth-child(1):hover {
   background-color: #8f66e6;
+  border: 5px #2a322a;
+  cursor: pointer;
+
 }
 
 .main {
@@ -194,7 +201,7 @@
 .naWrapper h1 {
   position: absolute;
   left: 50%;
-  background-color: #da6363;
+  background-color: #ea3939;
   border-radius: 20px;
   padding: 30px;
   max-width: 460px;
@@ -209,7 +216,8 @@
 }
 
 .naWrapper h1:hover {
-  background-color: #ffb1b1;
+  background-color: #b01818;
+  /* opacity: 50%; */
   cursor: pointer;
 }
 

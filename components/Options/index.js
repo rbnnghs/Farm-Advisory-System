@@ -33,15 +33,15 @@ const Options = ({ toggle, props }) => {
             Solved
             </div>
             </a> 
-            <div className={styles.space}></div>
-            <a href='/failForm'>
+            <div></div>
+            <a href='/nullform'>
             <div className={styles.failed}>
               Failed
             </div>
             </a>
               </div>
-              {/* </div> */}
               </div>
+              {/* </div> */}
     </>
   );
 };

@@ -3,7 +3,6 @@ import LevelInfoLink from "./LevelInfoLink"
 import styles from "../styles/Home.module.css"
 import Options from "./Options"
 
-
 const LevelInfo = ({id, level=0}) => {
     const levelInfo = useLevelInfo(id)
 
@@ -16,42 +15,16 @@ const LevelInfo = ({id, level=0}) => {
     const needsQuestions = !isQuestion && !children.length
     const needsAnswers = isQuestion && !children.length
 
-    // if(isQuestion) comment = hasAnswers ? 'This has answers' : 'This needs answers'
-    // let comment = ''
-    // let com =''
-    // if(!!isQuestion) comment = children.length ? '' :
-    // <div className={styles.qWrapper}>
-    // <h1>Question</h1>
-    // </div> 
+    let comment = ''
 
-    // const showQuestion = () => {
-        let comment = ''
+    const doesContain = levelInfo.choiceText.includes('?')
 
-        const doesContain = levelInfo.choiceText.includes('?')
-
-
-        // if(!!isQuestion) comment = children.length ? '' :
-        // <div>
-        // <div className={styles.qWrapper}>
-        // <h1>Answer</h1>
-        // <div className={styles.lvlAnswer}>
-        //             <style>
-        //       {`
-        //           .lvlAnswer {
-        //               background: white;
-        //            }
-        //        `}
-        //     </style>
-        // </div>
-        // </div> 
-        {/* <Options></Options> */}
-        // </div>
-        if (!isQuestion) comment = children.length ? '' :
-        <div className={styles.naWrapper}>
-            <a href='/failForm'>
-        <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>
-        </a>
-        </div>
+    if (!isQuestion) comment = children.length ? '' :
+    <div className={styles.naWrapper}>
+    <a href='/nullform'>
+    <h1>Currently there are no questions or answers for this subject. If you'd like to be the first to ask, press on this item.</h1>
+    </a>
+    </div>
 
     // if(!hasAnswers) com = children.length ? '' : 
     // <div className={styles.aWrapper}>
@@ -61,11 +34,11 @@ const LevelInfo = ({id, level=0}) => {
     
 
     return <div className={styles.main}><div key={id} className={`level-${level}`}>
-        <h1 onClick='' className={doesContain ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
+        <h1 className={doesContain ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
-        <div onClick='' className={styles.lvlAnswer}>{isQuestion ? levelInfo.answerText : children}</div>
+        <div className={styles.lvlAnswer}>{isQuestion ? levelInfo.answerText : children}</div>
         {/* {if(!!isQuestion) comment = children.length ? '' : */}
-        {/* <Options></Options>s */}
+        {/* <Options></Options> */}
     </div>
     </div>
 }
