@@ -345,7 +345,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .lvlAnswer {
+  .lvlAnswer .lvlAnswerNoBg {
     font-size: 1rem;
   }
 }
