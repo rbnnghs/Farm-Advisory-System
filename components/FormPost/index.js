@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Axios from 'axios'
 
 export default function FormulateSubmit() {
-    const url = "https://farm-advisory-system.vercel.app/data"
+    const url = "https://farm-advisory-system.vercel.app/api/data"
     const [data, setData] = useState({
         email: "",
         question: ""
