@@ -145,6 +145,7 @@
   font-size: 1.5rem;
   background-color: #ded0ab;
   color: #2a322a;
+  font-weight: 600;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -204,13 +205,14 @@
   background-color: #ea3939;
   border-radius: 20px;
   padding: 30px;
+  margin-top: 50px;
   max-width: 460px;
   font-weight: 500;
   /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  /* font-size: 1rem; */
+  font-size: 1.2rem;
   color: #ffffff;
   /* color: rgb(0, 0, 0); */
 }
@@ -221,8 +223,28 @@
 }
 
 .lvlAnswer {
-  /* background-color: #22D775; */
-  border-radius: 10px;
+  background: wheat;
+  border-radius: 30px;
+  padding: 40px;
+  text-align: center;
+  color: #494d49;
+  font-weight: 500;
+  /* background-color: #5200FF; */
+  text-decoration: none;
+  /* line-height: 30px; */
+  display: block;
+  width: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  /* color: inherit; */
+}
+
+.lvlAnswerNoBg {
+  border-radius: 30px;
   padding: 40px;
   text-align: center;
   color: #494d49;
@@ -231,7 +253,7 @@
   text-decoration: none;
   line-height: 30px;
   display: block;
-  width: 70%;
+  width: 50%;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
