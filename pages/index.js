@@ -1,5 +1,4 @@
 import LevelInfo from '../components/LevelInfo'
-import Head from 'next/head';
 
 export default function App () {
   // <Head>

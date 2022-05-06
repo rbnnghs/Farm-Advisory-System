@@ -11,9 +11,6 @@ import Tests from '../pages/tests'
  
 import DataContext from '../DataContext'
 import Modal from '../components/Modal'
-import Head from 'next/head';
-
-import fas from '../public/fas.ico'
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -22,9 +19,6 @@ function MyApp({Component, pageProps}) {
 
   return (
     <> 
-    <Head>
-      <link rel='FAS' href='/fas.ico'/>
-      </Head>
     <Navbar/>
     <Modal/>
   <DataContext.Provider value={data}>
