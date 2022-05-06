@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import styles from '../Options/styles.module.css'
-// import { render } from 'react-dom';
 
 const Options = ({ toggle, props }) => {
   const [scrollopt, setscrollopt] = useState(false);
@@ -44,7 +43,6 @@ const Options = ({ toggle, props }) => {
               </div>
               </div>
               </div>
-              {/* </div> */}
     </>
   );
 };

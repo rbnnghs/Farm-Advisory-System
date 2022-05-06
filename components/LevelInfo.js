@@ -31,10 +31,6 @@ const LevelInfo = ({id, level=0}) => {
         setOptions(true)
     } 
 
-    // if (applyOptions ? true : false) {
-    //     setOptions(true)
-    // }
-
     if (!isQuestion) comment = children.length ? '' :
     <div 
     onclick
@@ -43,12 +39,7 @@ const LevelInfo = ({id, level=0}) => {
     <h1>No questions or answers for this category. If you'd like to be the first to ask. 
         Press on this item to send an email.</h1>
     </a>
-    </div>
-    
-//    if (isQuestion) comment = children.length ? '' :
-//          <Options/>
-
-    
+    </div>    
     
     return <div className={styles.main}><div key={id} className={`level-${level}`}>
         <h1 className={containsConditions ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>

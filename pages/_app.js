@@ -7,7 +7,6 @@ import React from 'react'
 import useSWR from 'swr'
 
 import Navbar from '../components/Navbar'
-import Tests from '../pages/tests'
  
 import DataContext from '../DataContext'
 import Modal from '../components/Modal'

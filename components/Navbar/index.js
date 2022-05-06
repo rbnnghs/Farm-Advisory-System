@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Link from 'next/dist/client/link';
-import { Paperclip } from 'react-feather'
 import styles from '../Navbar/styles.module.css'
 
 const Navbar = ({ toggle }) => {
   const [scrollnav, setscrollnav] = useState(false);
   const [doEdit, setdoEdit] = useState(false);
   const [opened, setOpened] = useState(false);
-
-  // const hand = setOpened ? true : false
 
   const handleClose = () => setOpened(false);
   const handleShow = () => setOpened(true);
@@ -31,14 +28,6 @@ const Navbar = ({ toggle }) => {
     scroll.scrollToTop();
   };
 
-  <style jsx global>
-  {`
-      body {
-          background: var(--moonlight);
-       }
-   `}
-</style>
-
   return (
     <>
         <div className={styles.nav} scrollnav={scrollnav}>
@@ -47,8 +36,6 @@ const Navbar = ({ toggle }) => {
             <Link href='/'>
             FAS
             </Link>
-
-            {/* <Paperclip/> */}
             </div>
               </div>
               </div>
