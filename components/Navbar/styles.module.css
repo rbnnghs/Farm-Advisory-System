@@ -34,4 +34,9 @@
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
   }
+
+  .navLogo:hover .navLogo:active{
+    color: #5200FF;
+    opacity: 50%;
+  }
   

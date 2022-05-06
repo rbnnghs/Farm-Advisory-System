@@ -28,6 +28,11 @@
     opacity: 50%;
 }
 
+.btn-primary {
+    color: inherit;
+    background-color: inherit;
+}
+
 /* .modal:visited {
     background-color: aliceblue;
 } */

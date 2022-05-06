@@ -5,7 +5,10 @@ import { Button } from "react-scroll/modules";
 
 const LevelInfoLink = ({id}) => {
     const {choiceText="???"} = useLevelInfo(id)
-    const doesContain = choiceText.includes('?' || '.' || '')
+    const doesContainQuestionMark = choiceText.includes('?');
+    const doesContainFullStop = choiceText.includes('.');
+
+    const containsConditions = doesContainQuestionMark + doesContainFullStop
 
     // choiceText.replace('.', '?')
 
@@ -19,7 +22,7 @@ const LevelInfoLink = ({id}) => {
     <Link href={`/${id}`}>
     <div
     onclick=""
-    className={doesContain ? styles.questionCard : styles.card}
+    className={containsConditions ? styles.questionCard : styles.card}
     >
     {choiceText}
     </div>

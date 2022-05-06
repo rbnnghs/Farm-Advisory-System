@@ -18,7 +18,10 @@ const LevelInfo = ({id, level=0}) => {
     let comment = ''
     const localPart = 'me'
 
-    const doesContain = levelInfo.choiceText.includes('?')
+    const doesContainQuestionMark = levelInfo.choiceText.includes('?');
+    const doesContainFullStop = levelInfo.choiceText.includes('.');
+
+    const containsConditions = doesContainQuestionMark + doesContainFullStop
 
     if (!isQuestion) comment = children.length ? '' :
     <div 
@@ -29,20 +32,11 @@ const LevelInfo = ({id, level=0}) => {
         Press on this item to send an email.</h1>
     </a>
     </div>
-
-    // if(!hasAnswers) com = children.length ? '' : 
-    // <div className={styles.aWrapper}>
-    // <h1>Answers</h1>
-    // </div>
-    // 'This is a category' : 'This needs questions'
     
-
     return <div className={styles.main}><div key={id} className={`level-${level}`}>
-        <h1 className={doesContain ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
+        <h1 className={containsConditions ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
-        <div className={doesContain ? styles.lvlAnswer : styles.lvlAnswerNoBg}>{isQuestion ? levelInfo.answerText : children}</div>
-        {/* {if(!!isQuestion) comment = children.length ? '' : */}
-        {/* <Options></Options> */}
+        <div className={containsConditions ? styles.lvlAnswer : styles.lvlAnswerNoBg}>{isQuestion ? levelInfo.answerText : children}</div>
     </div>
     </div>
 }

@@ -11,6 +11,7 @@ import Tests from '../pages/tests'
  
 import DataContext from '../DataContext'
 import Modal from '../components/Modal'
+import Head from 'next/head';
 
 // import HeroSection from '../components/HeroSection'
 // import { useEffect } from 'react'
@@ -22,6 +23,9 @@ function MyApp({Component, pageProps}) {
 
   return (
     <> 
+    <Head>
+      <link rel='FAS' href='/fas.ico'/>
+    </Head>
     <Navbar/>
     <Modal/>
   <DataContext.Provider value={data}>

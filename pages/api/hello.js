@@ -20,7 +20,9 @@ const withChildren = array => {
   const emoji = singleWord && (Object.entries({
       "🍈": ["melon", "watermelon", "juicemelon"],
       "🌾": ["wheat", "grains"],
+      "🥬": ["lettuce", "spinach"],
       "🧪": ["tube", "tubers"],
+      "🍓": ["strawberry", "strawberries"],
       "🥕": ["vegetable", "veg", "vegetables"],
       "🍠": ["cassava", "yam"],
       "🥔": ["potato", "irish ", "Sweet Potato"],
@@ -39,7 +41,8 @@ const withChildren = array => {
       "🦠": ["disease", "diseases"],
       "📈": ["marketing", "market"],
       "🍚": ["rice"],
-      "🌽": ["maize", "corn"]
+      "🌽": ["maize", "corn"],
+      "🔱": ["weeding"]
   }).find(([_, arrayOfKeys]) => arrayOfKeys.includes(normalised)) ?? [])[0]
 
   if(emoji) levelInfo.choiceText = emoji + ' ' + levelInfo.choiceText
