@@ -1,15 +1,19 @@
 .opt {
-  display: flex;
+  /* display: flex; */
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-}
-
-.opt > div {
-float: right;
-/* margin: 10px; */
+  width: 100% !important; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* left: 50%; */
+  text-align: center; 
+  /* display: table-cell;  */
+  text-align: center; 
+  vertical-align: middle; 
 }
   
     @media screen and (max-width: 960px) {
@@ -33,33 +37,69 @@ float: right;
     }
   }
 
-  .solved {
-    width:60px; 
-    height: 60px;
-    border: 3px solid #47d25e;
-        cursor: pointer;
-        color: #47d25e;
-        text-align: center;
-        /* border-radius: 20px; */
+  .objProperties {
+    margin-top: 50px;
   }
+
+  .solved:hover {
+    border: 5px solid rgb(180, 219, 171);
+  }
+
+  .failed:hover {
+    border: 5px solid rgb(219, 171, 171);
+  }
+
+  .solved {
+    font-size: 1.8rem;
+    border-radius: 15px;
+    float: left;
+    width: 70px; 
+    height: 70px;
+    background-color: rgb(198, 236, 188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .solved a, .failed a{
+    background-color: inherit;
+  }
+
   .failed {
-    width:60px; 
-    height: 60px;
-    border: 3px solid #47d25e;
-        cursor: pointer;
-        color: #47d25e;
-        text-align: center;
-        
-        /* border-radius: 20px; */
+    font-size: 1.8rem;
+  border-radius: 15px;
+  float: right;
+  margin-left: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
   
   
   .optContainer { 
-    flex-direction: row;
-    /* width: 20px; */
-    /* background-color: aqua; */
-    text-align:center;
-    display: flex;
+    margin: 0 auto;
+    text-align: center;
     vertical-align: middle;
+    margin-top: 0px;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    /* background-color: wheat; */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 30px;
+    -webkit-transition: color .15s ease,border-color .15s ease;
+    transition: color .15s ease,border-color .15s ease;
+    width: 300px;
+    font-weight: 500;
+  }
+
+  .optContainer p {
+    color: #494d49;
+    background-color: inherit;
+    font-size: 1rem;
+    margin-top: 20px;
   }
   

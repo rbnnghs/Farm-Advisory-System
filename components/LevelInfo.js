@@ -32,11 +32,14 @@ const LevelInfo = ({id, level=0}) => {
         Press on this item to send an email.</h1>
     </a>
     </div>
+    else if (isQuestion) comment = children.length ? '' :
+         <Options/>
     
     return <div className={styles.main}><div key={id} className={`level-${level}`}>
         <h1 className={containsConditions ? styles.parentIdH1Ans : styles.parentIdH1}>{levelInfo.choiceText}</h1>
         <p>{comment}</p>
-        <div className={containsConditions ? styles.lvlAnswer : styles.lvlAnswerNoBg}>{isQuestion ? levelInfo.answerText : children}</div>
+        <div className={containsConditions ? styles.lvlAnswer : styles.lvlAnswerNoBg}>{isQuestion ? levelInfo.answerText : children}
+        </div>
     </div>
     </div>
 }

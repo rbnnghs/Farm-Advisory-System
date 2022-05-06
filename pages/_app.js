@@ -13,9 +13,6 @@ import DataContext from '../DataContext'
 import Modal from '../components/Modal'
 import Head from 'next/head';
 
-// import HeroSection from '../components/HeroSection'
-// import { useEffect } from 'react'
-
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 function MyApp({Component, pageProps}) {

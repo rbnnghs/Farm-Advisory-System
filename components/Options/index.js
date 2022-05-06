@@ -7,6 +7,8 @@ const Options = ({ toggle, props }) => {
   const [scrollopt, setscrollopt] = useState(false);
   const [doEdit, setdoEdit] = useState(false);
 
+  const localPart = 'me'
+
   const changeopt = () => {
     if (window.scrollY >= 80) {
       setscrollopt(true);
@@ -26,19 +28,20 @@ const Options = ({ toggle, props }) => {
   return (
     <>
         <div className={styles.opt} scrollopt={scrollopt}>
-        {/* <div className={styles.optContainer}> */}
-            <div className={styles.optLogo} onClick={toggleHome} to='/'>
-             <a href='/'>
-              <div className={styles.solved}>
-            Solved
+        <div className={styles.optContainer}>
+          {/* <p>Was this helpful?</p> */}
+          <div className={styles.objProperties}>
+          <a href='/'>
+        <div onClick={toggleHome} className={styles.solved}>
+              ✅
             </div>
             </a> 
-            <div></div>
-            <a href='/nullform'>
+            <a href="mailto:click.to.reveal@email.com" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
             <div className={styles.failed}>
-              Failed
+            ❌
             </div>
             </a>
+              </div>
               </div>
               </div>
               {/* </div> */}

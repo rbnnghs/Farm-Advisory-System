@@ -1,45 +1,11 @@
 .container {
   padding: 0 2rem;
-  /* height: 100%; */
-}
-
-.buttonBasic button{
-  /* border: 1px solid green; Green border */
-  color: black; /* White text */
-  padding: 30px 94px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  display: block; /* Make the buttons appear below each other */
-  text-align: center;
-  top: 170px;
-  position: relative;
-  cursor: pointer;
-  border: 5px #2a322a;
-  /* position: relative; */
-  margin: 0 auto;
-  /* align-items: center; */
-}
-
-.buttonBasic button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-  cursor: pointer;
-
-}
-
-.buttonBasic :nth-child(1):hover {
-  background-color: #8f66e6;
-  border: 5px #2a322a;
-  cursor: pointer;
-
 }
 
 .main {
   min-height: 100vh;
   margin-top: 100px;
-  /* height: 100%; */
-  /* padding: 4rem 0; */
   flex: 1;
-  /* display: flex; */
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -49,73 +15,7 @@
   color: rgb(189, 131, 171);
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #5200FF;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 2.55;
-  font-size: 2rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-/* 
-.answer {
-  font-size: 1.3rem;
-} */
-
 .connect {
-  /* margin: 1rem; */
   padding: 20px;
   text-align: center;
   color: white;
@@ -124,8 +24,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* border: 5px solid #5200FF;  */
-  /* background-color: #000000; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
@@ -173,17 +71,13 @@
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: auto;
-  /* height: 50px; */
-  /* background-color: #36e18b; */
 }
 
 .qWrapper h1 {
   position: absolute;
   left: 50%;
-  /* background-color: #36e18b; */
   border-radius: 20px;
   padding: 15px;
-  /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -208,13 +102,11 @@
   margin-top: 50px;
   max-width: 460px;
   font-weight: 500;
-  /* width: 260px; */
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1.2rem;
   color: #ffffff;
-  /* color: rgb(0, 0, 0); */
 }
 
 .naWrapper h1:hover {
@@ -229,9 +121,7 @@
   text-align: center;
   color: #494d49;
   font-weight: 500;
-  /* background-color: #5200FF; */
   text-decoration: none;
-  /* line-height: 30px; */
   display: block;
   width: 50%;
   overflow: hidden;
@@ -240,7 +130,6 @@
   margin-top: 40px;
   text-align: center;
   font-size: 1.5rem;
-  /* color: inherit; */
 }
 
 .lvlAnswerNoBg {
@@ -249,7 +138,6 @@
   text-align: center;
   color: #494d49;
   font-weight: 500;
-  /* background-color: #5200FF; */
   text-decoration: none;
   line-height: 30px;
   display: block;
@@ -259,7 +147,6 @@
   margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
-  /* color: inherit; */
 }
 
 .wrapperCard {
@@ -274,7 +161,6 @@
   justify-content: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* max-width: 800px; */
 }
 
 .questionCard {
@@ -288,7 +174,6 @@
   border-radius: 10px;
   -webkit-transition: color .15s ease,border-color .15s ease;
   transition: color .15s ease,border-color .15s ease;
-  /* width: 300px; */
 }
 
 .questionCard:hover {
@@ -302,8 +187,6 @@
   -webkit-transition: color .15s ease,border-color .15s ease;
   transition: color .15s ease,border-color .15s ease;
   cursor: pointer;
-  /* opacity: 50%; */
-  /* border: 1px solid #5200FF; */
 }
 
 .card {
@@ -318,31 +201,25 @@
   transition: color .15s ease,border-color .15s ease;
   width: 300px;
   font-weight: 500;
-  /* opacity: 80%; */
 }
 
 @media only screen and (max-width: 768px) {
   .card {
     font-size: 1rem;
-    /* width: 80%; */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .parentIdH1 {
-    /* flex-direction: column; */
     width: 90%;
     font-size: 1rem;
-    /* width: 400px; */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .parentIdH1Ans {
-    /* flex-direction: column; */
     width: 90%;
     font-size: 1rem;
-    /* width: 400px; */
   }
 }
 
@@ -369,13 +246,7 @@
 
 @media only screen and (max-width: 768px) {
   .naWrapper h1 {
-    /* flex-direction: column; */
-    /* width: 90%; */
-    /* width: 500px; */
     font-size: 1rem;
-    /* width: 80%; */
-    /* line-height: 30px; */
-    /* width: 400px; */
   }
 }
 
@@ -387,21 +258,17 @@
 
 @media only screen and (max-width: 768px) {
   .naWrapper {
-    /* height: 30px;
-    width: 20px; */
+
   }
 }
 
 .windowFull {
   padding: 0;
   margin: 0 auto;
-  /* height: 100%;
-  width: 100%; */
 }
 
 .windowFrame {
   position: relative;
-  /* height: 100%; */
 }
 
 .windowFrameLeft {
@@ -410,8 +277,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* width: 50%; */
-  /* height: 100%; */
 }
 
 @media screen and (max-width: 768px) {
@@ -424,22 +289,10 @@
 
 .card:hover {
   cursor: pointer;
-  /* border: 1px solid #5200FF; */
   background-color: #5200FF;
   color: #abdebb;
   opacity: 50%;
 }
-/* 
-.card p {
-  color: #5200FF;
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.5;
-} */
-
-/* span {
-  color: #22D775;
-} */
 
 .logo {
   height: 1em;

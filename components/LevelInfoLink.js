@@ -10,12 +10,6 @@ const LevelInfoLink = ({id}) => {
 
     const containsConditions = doesContainQuestionMark + doesContainFullStop
 
-    // choiceText.replace('.', '?')
-
-    function handleAnswer(e) {
-        e.target.style.background = "#36e18b"
-    }
-
     return (
         <>
     <div className={styles.wrapperCard}>
