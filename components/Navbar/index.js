@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
           <div className={styles.navbarContainer}>
             <div className={styles.navLogo} onClick={toggleHome} to='/'>
             <Link href='/'>
-            FAS
+            FAS 🧑‍🌾
             </Link>
             </div>
               </div>
