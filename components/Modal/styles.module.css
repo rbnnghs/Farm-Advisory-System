@@ -22,6 +22,11 @@
     display: flex;
 }
 
+.aboutFAS {
+    color: #433c53;
+    font-weight: 700;
+}
+
 .modal button:hover {
     background-color: #5200FF;
     border: none;
@@ -33,13 +38,29 @@
     background-color: inherit;
 }
 
+.modal button:focus,.modal button:active {
+    /* outline: none !important; */
+    box-shadow: none;
+    background-color: #DEB6AB;
+    color: #85586F;
+    -webkit-box-shadow: none;
+ }
+
 /* .modal:visited {
     background-color: aliceblue;
 } */
 
-.modal button:visited, .modal:hover, .modal:active {
-    color: inherit;
-  }
+.highlight {
+    background-color: #5200FF;
+    width: fit-content;
+    color: aliceblue;
+}
+
+.highlight:nth-child(4) {
+    background-color: #433c53;
+    width: fit-content;
+    color: rgb(73, 111, 145);
+}
 
 .infoSection {
     color: #85586F;
@@ -49,3 +70,32 @@
 .close {
     background-color: #5200FF;
 }
+
+.tapShow {
+    visibility: visible;
+}
+
+.clickShow {
+    visibility: visible;
+}
+
+@media all and (max-width: 768px) {
+.tapShow {
+    visibility: visible;
+}
+.clickShow {
+    visibility: hidden;
+    display: none;
+}
+}
+
+@media not all and (max-width: 768px) {
+    .tapShow {
+        visibility: hidden;
+        display: none !important;
+    }
+    .clickShow {
+        visibility: visible;
+        /* display: block; */
+    }
+    }

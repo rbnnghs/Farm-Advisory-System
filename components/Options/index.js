@@ -34,10 +34,16 @@ const Options = ({ toggle, props }) => {
         <div onClick={toggleHome} className={styles.solved}>
               ✅
             </div>
+            <div className={styles.solvedUnder}>
+              Return to Home
+            </div>
             </a> 
             <a href="mailto:click.to.reveal@email.com" target="_blank" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
             <div className={styles.failed}>
             ❌
+            </div>
+            <div className={styles.failedUnder}>
+              Email to Admin
             </div>
             </a>
               </div>

@@ -23,8 +23,24 @@ const LevelInfo = ({id, level=0}) => {
 
     const doesContainQuestionMark = levelInfo.choiceText.includes('?');
     const doesContainFullStop = levelInfo.choiceText.includes('.');
+    const doesContainPig = levelInfo.choiceText.includes('piglets')
+    const doesContain448 = levelInfo.choiceText.includes('How long will it take for a sow to come on heat after weaning')
+    const doesContain438 = levelInfo.choiceText.includes('What precaution should I take in housing farrowing sow and the piglet')
+    const doesContain485 = levelInfo.choiceText.includes('I want to go into piggery but not knowledgeable on what should constitute their feed')
+    const doesContain515 = levelInfo.choiceText.includes('What should be the marketing age of pigs')
+    const doesContain300 = levelInfo.choiceText.includes('should')
+    // const doesContain290 = levelInfo.choiceText.includes('Can I keep, raise birds of different ages in the same house')
 
-    const containsConditions = doesContainQuestionMark + doesContainFullStop
+    const containsConditions = 
+    doesContainQuestionMark + 
+    doesContainFullStop + 
+    doesContainPig + 
+    doesContain448 + 
+    doesContain438 + 
+    doesContain485 +
+    doesContain515 +
+    doesContain300 
+    // doesContain290
 
     const applyOptions = () => {
         if (isQuestion) comment = children.length ? '' :

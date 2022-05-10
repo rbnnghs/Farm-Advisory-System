@@ -35,8 +35,8 @@
     text-decoration: none;
   }
 
-  .navLogo:hover .navLogo:active{
+  .nav a:hover {
     color: #5200FF;
-    opacity: 50%;
+    opacity: 70%;
   }
   
