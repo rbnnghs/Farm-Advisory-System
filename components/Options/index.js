@@ -35,7 +35,7 @@ const Options = ({ toggle, props }) => {
               ✅
             </div>
             </a> 
-            <a href="mailto:click.to.reveal@email.com" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
+            <a href="mailto:click.to.reveal@email.com" target="_blank" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
             <div className={styles.failed}>
             ❌
             </div>
