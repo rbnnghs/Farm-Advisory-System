@@ -7,6 +7,8 @@ const LevelInfoLink = ({id}) => {
     const {choiceText="???"} = useLevelInfo(id)
     const doesContainQuestionMark = choiceText.includes('?');
     const doesContainFullStop = choiceText.includes('.');
+    const doesContainComma = choiceText.includes(',')
+    const doesContainWhat = choiceText.includes('What', 'Where', 'When', 'How')
     const doesContainPig = choiceText.includes('piglets')
     const doesContain448 = choiceText.includes('How long will it take for a sow to come on heat after weaning')
     const doesContain438 = choiceText.includes('What precaution should I take in housing farrowing sow and the piglet')
@@ -19,6 +21,8 @@ const LevelInfoLink = ({id}) => {
     const containsConditions = 
     doesContainQuestionMark + 
     doesContainFullStop + 
+    doesContainComma +
+    doesContainWhat +
     doesContainPig + 
     doesContain448 + 
     doesContain438 + 

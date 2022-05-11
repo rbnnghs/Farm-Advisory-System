@@ -2,7 +2,7 @@ import React from "react";
 // import
 import { Button, Modal } from "react-bootstrap";
 import styles from '../Modal/styles.module.css'
-import aboutDiagram from '../../public/about.svg'
+import aboutDiagram from '../../public/aboutdiagram.svg'
 import Image from "next/image";
 
 export default function showModal() {
