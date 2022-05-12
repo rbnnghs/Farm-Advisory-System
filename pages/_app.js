@@ -10,6 +10,7 @@ import Navbar from '../components/Navbar'
  
 import DataContext from '../DataContext'
 import Modal from '../components/Modal'
+import Head from 'next/head';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -18,6 +19,9 @@ function MyApp({Component, pageProps}) {
 
   return (
     <> 
+    <Head>
+      <title>FAS 🧑‍🌾 - Improve your yield!</title>
+    </Head>
     <Navbar/>
     <Modal/>
   <DataContext.Provider value={data}>
