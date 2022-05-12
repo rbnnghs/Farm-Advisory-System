@@ -24,7 +24,8 @@ const LevelInfo = ({id, level=0}) => {
     const doesContainQuestionMark = levelInfo.choiceText.includes('?')
     const doesContainFullStop = levelInfo.choiceText.includes('.')
     const doesContainComma = levelInfo.choiceText.includes(',')
-    const doesContainWhat = levelInfo.choiceText.includes('What', 'Where', 'When', 'How')
+    const doesContainWhat = levelInfo.choiceText.includes('What', 'Where', 'When', 'How', 'My')
+    const doesContainMy = levelInfo.choiceText.includes('My')
     const doesContainPig = levelInfo.choiceText.includes('piglets')
     const doesContain448 = levelInfo.choiceText.includes('How long will it take for a sow to come on heat after weaning')
     const doesContain438 = levelInfo.choiceText.includes('What precaution should I take in housing farrowing sow and the piglet')
@@ -38,6 +39,7 @@ const LevelInfo = ({id, level=0}) => {
     doesContainFullStop + 
     doesContainComma +
     doesContainWhat +
+    doesContainMy +
     doesContainPig + 
     doesContain448 + 
     doesContain438 + 
