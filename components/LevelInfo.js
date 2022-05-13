@@ -25,6 +25,7 @@ const LevelInfo = ({id, level=0}) => {
     const doesContainFullStop = levelInfo.choiceText.includes('.')
     const doesContainComma = levelInfo.choiceText.includes(',')
     const doesContainWhat = levelInfo.choiceText.includes('What', 'Where', 'When', 'How', 'My')
+    const doesContainHow = levelInfo.choiceText.includes('How')
     const doesContainMy = levelInfo.choiceText.includes('My')
     const doesContainPig = levelInfo.choiceText.includes('piglets')
     const doesContain448 = levelInfo.choiceText.includes('How long will it take for a sow to come on heat after weaning')
@@ -39,6 +40,7 @@ const LevelInfo = ({id, level=0}) => {
     doesContainFullStop + 
     doesContainComma +
     doesContainWhat +
+    doesContainHow +
     doesContainMy +
     doesContainPig + 
     doesContain448 + 

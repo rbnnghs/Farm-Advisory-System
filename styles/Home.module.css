@@ -103,7 +103,7 @@
   padding: 30px;
   margin-top: 50px;
   /* max-width: 460px; */
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -251,6 +251,7 @@
 @media only screen and (max-width: 768px) {
   .naWrapper h1 {
     font-size: 1rem;
+    width: 75%;
   }
 }
 
