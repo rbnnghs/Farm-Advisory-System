@@ -21,6 +21,8 @@ function MyApp({Component, pageProps}) {
     <> 
     <Head>
       <title>FAS 🧑‍🌾 - Improve your yield!</title>
+      <link rel='apple-touch-icon' sizes='128x128' href='fas.png'/>
+      <link rel='icon' sizes='192x192' href='fas.png'/>
     </Head>
     <Navbar/>
     <Modal/>
