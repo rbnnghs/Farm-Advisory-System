@@ -6,7 +6,7 @@
     -o-transition: none !important;
     transition: none !important;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     justify-content: center;
     font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
@@ -31,6 +31,7 @@
     cursor: pointer;
     font-weight: bold;
     float: left;
+    font-size: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
   }
