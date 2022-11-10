@@ -30,7 +30,7 @@ return (
         <Modal show={show} onHide={handleGo}>
             <Modal.Header closeButton>
                 <Modal.Title className={styles.aboutFAS}>
-                    About FAS
+                    About
                 </Modal.Title>
             </Modal.Header>
             <div className={styles.infoSection}>

@@ -12,7 +12,9 @@
 
 .loadText {
   float: right;
-  color: rgb(189, 131, 171);
+  margin-right: 1.5rem;
+  font-weight: 700;
+  color: rgb(189, 150, 131);
 }
 
 .connect {
@@ -42,8 +44,11 @@
   margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
-  background-color: #97dd82;
   color: #437427;
+  background: linear-gradient(180deg, #E9FF8F 0%, #6CDE36 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  /* background-color: #97dd82;
+  color: #437427; */
   font-weight: 600;
   border-radius: 15px;
   transition: color 0.15s ease, border-color 0.15s ease;
@@ -61,8 +66,8 @@
   margin-right: auto;
   text-align: center;
   font-size: 1.5rem;
-  background-color: #c4f4a8;
-  color: rgb(38, 136, 38);
+  background: linear-gradient(180deg, #E9FF8F 0%, #6CDE36 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
@@ -97,17 +102,18 @@
 .naWrapper h1 {
   position: absolute;
   left: 50%;
-  background-color: #f14f4f;
+  background: linear-gradient(180deg, #ff8f8f 0%, #de3636 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   padding: 30px;
   margin-top: 50px;
   /* max-width: 460px; */
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #430b0b;
 }
 
 .naWrapper h1:hover {
@@ -119,8 +125,8 @@
   border-radius: 15px;
   padding: 30px;
   text-align: center;
-  background-color: #f4d3a8;
-  color: #735631;
+  background: linear-gradient(180deg, #FFE792 0%, #E8A138 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   font-weight: 500;
   text-decoration: none;
   display: block;
@@ -170,8 +176,10 @@
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
-  background-color: #DEB6AB;
-  color: #85586F;
+  /* background-color: #DEB6AB;
+  color: #85586F; */
+  background: linear-gradient(180deg, #fff48f 0%, #de9b36 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   border-radius: 15px;
   width: 435px;
@@ -183,8 +191,10 @@
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
-  background-color: #c4f4a8;
-  color: rgb(38, 136, 38);
+  /* background-color: #c4f4a8;
+  color: rgb(38, 136, 38); */
+  background: linear-gradient(180deg, #E9FF8F 0%, #6CDE36 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   border-radius: 15px;
   -webkit-transition: color .15s ease,border-color .15s ease;
@@ -196,8 +206,10 @@
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
-  background-color: #f4d3a8;
-  color: #b38e5e;
+  background: linear-gradient(180deg, #FFE792 0%, #E8A138 100%);
+box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  /* background-color: #f4d3a8;
+  color: #b38e5e; */
   font-size: 1.5rem;
   text-decoration: none;
   border-radius: 15px;
@@ -299,8 +311,9 @@
 
 .card:hover {
   cursor: pointer;
-  background-color: #5200FF;
-  color: #abdebb;
+  color: #811a1a;
+  background: linear-gradient(180deg, #ffdf8f 0%, #ded036 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
   opacity: 50%;
 }
 

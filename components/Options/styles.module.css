@@ -57,7 +57,9 @@
     float: left;
     width: 70px; 
     height: 70px;
-    background-color: rgb(198, 236, 188);
+    color: #3a811a;
+    background: linear-gradient(180deg, #E9FF8F 0%, #6CDE36 100%);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +89,10 @@
   margin-left: 20px;
   width: 70px;
   height: 70px;
-  background-color: rgb(255, 219, 219);
+  color: #811a1a;
+  background: linear-gradient(180deg, #ff8f8f 0%, #de3636 100%);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  /* background-color: rgb(255, 219, 219); */
   display: flex;
   align-items: center;
   justify-content: center;

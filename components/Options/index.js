@@ -32,7 +32,7 @@ const Options = ({ toggle, props }) => {
           <div className={styles.objProperties}>
           <a href='/'>
         <div onClick={toggleHome} className={styles.solved}>
-              ✅
+        ✓
             </div>
             <div className={styles.solvedUnder}>
               Return to Home
@@ -40,7 +40,7 @@ const Options = ({ toggle, props }) => {
             </a> 
             <a href="mailto:click.to.reveal@email.com" target="_blank" onClick={e => (window.location.href = `mailto:${localPart}@${process.env.NEXT_PUBLIC_DOMAIN}`, e.preventDefault())}>
             <div className={styles.failed}>
-            ❌
+            ×
             </div>
             <div className={styles.failedUnder}>
               Email to Admin
